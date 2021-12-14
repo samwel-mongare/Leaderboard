@@ -1,0 +1,26 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 40vw;
+    gap: 2rem;
+    margin-left: 3%;
+}
+
+.scores_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    height: 1.5em;
+    margin-top: 0.5em;
+    align-self: center;
+}
+
+ul {
+    list-style-type: none;
+    border: 1px solid black;
+    margin: 0;
+    padding-left: 0.5em;
+}
+

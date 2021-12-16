@@ -10,21 +10,19 @@ const users = [];
 const LOCAL_STORAGE_LIST_KEY = 'game.list';
 let outList = JSON.parse(localStorage.getItem(LOCAL_STORAGE_LIST_KEY)) || [];
 
-function createTask(playerName, playerScore) {
-  return { user: playerName, score: playerScore };
-}
+const createTask = ((playerName, playerScore) => ({ user: playerName, score: playerScore }));
 
-function clearElement(element) {
+const clearElement = ((element) => {
   while (element.firstChild) {
     element.removeChild(element.firstChild);
   }
-}
+});
 
-function save() {
+const save = (() => {
   localStorage.setItem(LOCAL_STORAGE_LIST_KEY, JSON.stringify(outList));
-}
+});
 
-function compare(a, b) {
+const compare = ((a, b) => {
   if (a.score > b.score) {
     return -1;
   }
@@ -32,9 +30,9 @@ function compare(a, b) {
     return 1;
   }
   return 0;
-}
+});
 
-export function displayElements() {
+export const displayElements = (() => {
   outList.sort(compare);
   const haley = document.getElementById('score_table');
   clearElement(haley);
@@ -44,9 +42,9 @@ export function displayElements() {
         <li>${outList[i].user} :  ${outList[i].score}</li>`;
   }
   save();
-}
+});
 
-export function addContent() {
+export const addContent = (() => {
   newPlayerForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const playerName = newPlayerInput.value;
@@ -66,9 +64,9 @@ export function addContent() {
     postData('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/LrmdcBBQKQpvHIpn6Vpd/scores', users[0])
       .then((data) => data);
   });
-}
+});
 
-export function refreshList() {
+export const refreshList = (() => {
   leaderBoard.addEventListener('click', () => {
     async function thisIsIt() {
       const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/LrmdcBBQKQpvHIpn6Vpd/scores');
@@ -80,4 +78,4 @@ export function refreshList() {
     const result = thisIsIt();
     return result;
   });
-}
+});

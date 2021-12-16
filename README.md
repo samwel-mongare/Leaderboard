@@ -16,6 +16,7 @@ Additional description about the project and its features.
 
 - HTML
 - CSS
+- JavaScript
 - Webpack
 
 ### Using it Locally

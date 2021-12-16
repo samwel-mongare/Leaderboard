@@ -1,6 +1,6 @@
 # Leaderboard: Setup Project
 
-> This is the first milestone of the Leaderboard project with the skeleton of the project.
+> This is the second milestone of the Leaderboard project with the skeleton of the project.
 
 ## Project screenshot
 
@@ -36,7 +36,7 @@ Additional description about the project and its features.
   > in your cmd or command line navigate to where this project is located, then;
 
 ```cmd
-cd leaderboard
+cd Leaderboard
 ```
 
 > thereafter run

@@ -39,7 +39,7 @@ export const displayElements = (() => {
   for (let i = 0; i < outList.length; i++) {
     const hale = document.getElementById('score_table');
     hale.innerHTML += `
-        <li>${outList[i].user} :  ${outList[i].score}</li>`;
+        <li>${outList[i].user} : <b>${outList[i].score}</b></li>`;
   }
   save();
 });

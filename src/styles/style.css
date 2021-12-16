@@ -13,6 +13,11 @@ main {
   margin-left: 3%;
 }
 
+h1 {
+  color: white;
+  margin-left: 20%;
+}
+
 .score_input h2 {
   color: white;
   margin-left: 6%;

@@ -1,6 +1,6 @@
-# Leaderboard: Setup Project
+# Leaderboard
 
-> This is the second milestone of the Leaderboard project with the leaderboard api added to the project.
+> This project involves the use of a leaderboard API to store and retrieve data of players' scores. It is an application that can come in handy during game time.
 
 ## Project screenshot
 

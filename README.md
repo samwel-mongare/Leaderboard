@@ -1,6 +1,6 @@
 # Leaderboard: Setup Project
 
-> This is the second milestone of the Leaderboard project with the skeleton of the project.
+> This is the second milestone of the Leaderboard project with the leaderboard api added to the project.
 
 ## Project screenshot
 

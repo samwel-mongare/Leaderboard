@@ -1,9 +1,6 @@
 import '../styles/style.css';
-import { displayElements } from '../js/display.js';
-import { addContent, refreshList } from '../js/addRefresh.js';
-
+import { addContent, refreshList, displayElements } from './addRefresh.js';
 
 displayElements();
 refreshList();
 addContent();
-

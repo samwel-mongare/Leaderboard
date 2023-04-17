@@ -48,7 +48,7 @@ code .
 
 ## Authors
 
-👤 **Author**
+👤 **Sam**
 
 - GitHub: [@githubhandle](https://github.com/Mosams/)
 - Twitter: [@twitterhandle](https://twitter.com/sam_mongare)
